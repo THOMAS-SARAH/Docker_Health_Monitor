@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  health-api:
+    build: .
+    container_name: saas_health_api
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_ENV=production
+    restart: always
